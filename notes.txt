@@ -1,0 +1,29 @@
+in python:
+Need fast membership? → set
+
+Need counting? → Counter
+
+Need key → value? → dict
+
+Need stack? → list
+
+Need queue? → deque
+
+Need priority? → heapq
+
+Need graph? → adjacency list with dict + list/set
+
+Need union-find / trie / trees? → implement
+
+
+Dynamic array → list
+
+Hash map → dict
+
+Hash set → set
+
+Queue/Deque → collections.deque
+
+Priority queue → heapq
+
+Frequency map → Counter
