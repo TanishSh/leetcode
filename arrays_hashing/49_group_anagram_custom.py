@@ -1,5 +1,5 @@
 # hash table
-# issues with code:
+# !!!!!!!!!!!! issues with code:
 # inefficient: item_exists = any(strs[i] in sublist for sublist in output)
 # It searches through all groups every time just to see if the word is already there.
 # But this is unnecessary because each word is processed only once in order. You do not need to keep checking whether it already exists.

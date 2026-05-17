@@ -1,5 +1,5 @@
 # ------------------------------------ my solution which is non-hash map 
-# (also similar to hash map, two pass official solution)----------------------------------
+# (it's similar to hash map, two pass official solution)----------------------------------
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         li = [] #malloc
@@ -32,6 +32,7 @@ class Solution:
         i, j = 0, len(nums) - 1
 
         while i < j:
+            # just using the num in [num,i] pair
             a1 = A[i][0] 
             a2 = A[j][0]
             curr = A[i][0] + A[j][0]
@@ -44,7 +45,7 @@ class Solution:
             else:
                 j+= 1 # curr < target, so move right  pointer to inc. curr
 
-        return []
+        return [] # if nothing already returned, it's empty
     
 # hash map, two pass
 # -------------- hash map, two pass algorithm ------------
