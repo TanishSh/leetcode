@@ -12,16 +12,16 @@ class Solution:
             arr.append(curr)
             curr = curr.next
         
-        reversed_arr = arr[::-1]
+        reversed_arr = arr[::-1] # reverse the list
         
-        for i, val in enumerate(reversed_arr): 
-            if i+1 < len(reversed_arr):
-                val.next = reversed_arr[i+1]
+        for i, val in enumerate(reversed_arr):  # get the index and the values of reversed 
+            if i+1 < len(reversed_arr): # make sure next index is less than length
+                val.next = reversed_arr[i+1] # next pointer points to the next in reverse list
             else:
                 val.next = None
 
-        if len(reversed_arr) > 0:
-            return reversed_arr[0]
+        if len(reversed_arr) > 0: # only return head if length > 0
+            return reversed_arr[0] 
 
     
 
